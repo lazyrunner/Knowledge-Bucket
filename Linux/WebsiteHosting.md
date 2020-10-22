@@ -1,5 +1,8 @@
 # Website Hosting in Linux Machine
 
+##### Author : Sudeshna Bora
+
+
 <b>Goal:</b> Start an apache server inside a remote linux machine and host a website and be able to access it from outside the network. This can also be visualised as <b>LAMP</b> architecture. But currently only L and A and P will be covered.
 
 <b>Software Specification:</b> The linux machine is Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-118-generic x86_64)
@@ -82,12 +85,3 @@ Post that <code>curl http://[host_name]</code> should give us the new website.
 
 Eg:
 ngrok http -host-header=rewrite test.dev:80</code><pre>
-
-
-
-
-
-
-
-
-
