@@ -84,7 +84,7 @@ Post that <code>curl http://[host_name]</code> should give us the new website.
 <pre><code>ngrok http -host-header=rewrite [host_name]:[port]
 
 Eg:
-ngrok http -host-header=rewrite test.dev:80</code><pre>
+ngrok http -host-header=rewrite test.dev:80</code></pre>
 
 Now this will give a url to access outside the network
 
@@ -100,6 +100,8 @@ Forwarding                    https://476dc4213b7f.ngrok.io -> http://test.dev:8
 Connections                   ttl     opn     rt1     rt5     p50     p90
                               4       0       0.01    0.01    5.89    6.05   
 </code></pre>
+
+
 
 So, <code>http://476dc4213b7f.ngrok.io</code> is the url to access from outside this network. 
 
