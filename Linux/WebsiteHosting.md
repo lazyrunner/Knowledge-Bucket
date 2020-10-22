@@ -20,7 +20,7 @@ Once installation is done. To start , restart and stop
 
 <pre><code>/etc/init.d/apache2 start</code></pre>
 
-<pre><code>/etc/init.d/apache2 restart</code></pre>
+<pre><code>/etc/init.d/apache2 restart     -------------------------------------------------------------------------- <a name="restart">[1]</a> </code></pre>
 
 <pre><code>/etc/init.d/apache2 stop</code></pre>
 
@@ -46,7 +46,7 @@ Till now the step we have accomplished is <code>curl http://your_server_ip</code
 
 This particular html file is in <code>/var/www/html/</code>. All our websites should be inside the <code>/var/www/</code> folder. 
 
-<b>Note:</b> If we want to change this html file. We have to rename the new html file index.html (atleast till now) and restart the server.
+<b>Note:</b> If we want to change this html file. We have to rename the new html file index.html (atleast till now) and [restart](#restart) the server.
 
 <b> Hosting our own domain and consequently own website </b>
 
