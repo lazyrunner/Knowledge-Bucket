@@ -85,3 +85,22 @@ Post that <code>curl http://[host_name]</code> should give us the new website.
 
 Eg:
 ngrok http -host-header=rewrite test.dev:80</code><pre>
+
+Now this will give a url to access outside the network
+
+<pre><code>
+Session Status                online
+Session Expires               7 hours, 56 minutes
+Version                       2.3.35
+Region                        United States (us)
+Web Interface                 http://127.0.0.1:4040
+Forwarding                    http://476dc4213b7f.ngrok.io -> http://test.dev:80
+Forwarding                    https://476dc4213b7f.ngrok.io -> http://test.dev:80
+
+Connections                   ttl     opn     rt1     rt5     p50     p90
+                              4       0       0.01    0.01    5.89    6.05   
+</code></pre>
+
+So, <code>http://476dc4213b7f.ngrok.io</code> is the url to access from outside this network. 
+
+<b>Note:</b> We don't really need a subdomain [host_name]. This thing can be done with localhost or the ip directly.
