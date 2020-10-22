@@ -65,7 +65,7 @@ Now if we try <code>http://host_name</code>. It will render the index.html file 
 For this let us first create a folder in /var/www/. Inside this folder , let us have any subfolder required or place our website file.
 
 This folder/site now needs to be connected to the host. That is done in <code>/etc/apache2/sites-available</code>.Create a new file by copying <code>000-default.conf</code>. The name should be same as the host we want to create.
-We are creating a virtual host . The sample (with comments can be found in virtualHost.conf)
+We are creating a virtual host . The sample can be found [here](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/docs/VirtualHost.conf)
 
 Once this configuration file is created , we need to enable it. 
 
