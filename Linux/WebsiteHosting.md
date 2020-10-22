@@ -20,7 +20,7 @@ Once installation is done. To start , restart and stop
 
 <pre><code>/etc/init.d/apache2 start</code></pre>
 
-<pre><code>/etc/init.d/apache2 restart     -------------------------------------------------------------------------- <a name="restart">[1]</a> </code></pre>
+<pre><code>/etc/init.d/apache2 <a name="restart">restart</a> </code></pre>
 
 <pre><code>/etc/init.d/apache2 stop</code></pre>
 
