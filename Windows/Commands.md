@@ -1,6 +1,6 @@
 # Commands used in windows 
 
-####\#Author : Sudeshna Bora
+##### Author : Sudeshna Bora
 
 ### <a name="os_build">Get information about OS build</a>
 <br>
