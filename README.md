@@ -17,7 +17,7 @@ A collection of different knowledge/information I have gathered.
  &nbsp; &nbsp; &nbsp; * [Initialise Development Mode](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Excel/Development.md#Developer_mode)<br>
  &nbsp; &nbsp; &nbsp; * [Create Input Button](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Excel/Development.md#Button)<br>
  &nbsp; &nbsp; &nbsp; * [Fetch Data from Web](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Excel/Development.md#Web_Data)<br>
- &nbsp; &nbsp; &nbsp; * [Record Macros](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Excel/Development.md#Web_Data)<br>
+ &nbsp; &nbsp; &nbsp; * [Record Macros](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Excel/Development.md#Record_Macros)<br>
  
     
 - <b> Miscellanous Documents </b><br>
@@ -27,3 +27,5 @@ A collection of different knowledge/information I have gathered.
 ---
 - [] PHP - Slim framework
 - [] Value investing
+- [] Mongo
+- [] X-ray code scan (https://jfrog.com/xray/)
