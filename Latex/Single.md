@@ -1,7 +1,11 @@
 # Single Latex Documentation
-This documentation is to show how to write a report using a single latex document. The same can be achieved by multiple latex file but will be handled in a separate section.
+This documentation is to show how to write a report using a single latex document. The same can be achieved by multiple latex file but will be handled in a separate section. A sample Latex Template can be found [here](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/docs/SinglePageStructure.tex).
+
 
 #### Author: Sudeshna Bora
+
+#### Application Used : Overleaf .
+But can work with tekmaker etc.
 
 ---
 ## <a name="Preamble"> Preamble </a>
