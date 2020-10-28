@@ -40,6 +40,7 @@ A collection of different knowledge/information I have gathered.
      
 - <b> Miscellanous Documents </b><br>
  &nbsp; &nbsp; &nbsp; * [Virtual Host Configuration files](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/docs/VirtualHost.conf)
+ &nbsp; &nbsp; &nbsp; * [Single Page Latex Document Structure](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/docs/SinglePageStructure.tex)
 
 ## TODO
 ---
@@ -48,4 +49,5 @@ A collection of different knowledge/information I have gathered.
 - [] Mongo
 - [] X-ray code scan (https://jfrog.com/xray/)
 - [] Add Multi-doc Latex
-- [] Add Sampe Latex [Single and multi doc]
+- [X] Add sample document showing the structure of Latex Single page document
+- [] Add Sampe Latex [multi doc]
