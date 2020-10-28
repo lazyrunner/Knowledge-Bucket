@@ -35,9 +35,8 @@ A collection of different knowledge/information I have gathered.
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; * [Having different names in actual page and TOC](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Latex/Single.md#Different_name)<br>
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; * [Writing Equations](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Latex/Single.md#Equations)<br>
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; * [Adding Figures](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Latex/Single.md#Figures)<br>
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; * [Referencing Figures etc](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Latex/Single.md#reference)
-<br>
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; * [Bibliography](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Latex/Single.md#Bibliography)<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; * [Referencing Figures etc](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Latex/Single.md#reference)<br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* [Bibliography](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Latex/Single.md#Bibliography)<br>
      
 - <b> Miscellanous Documents </b><br>
  &nbsp; &nbsp; &nbsp; * [Virtual Host Configuration files](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/docs/VirtualHost.conf)
