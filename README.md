@@ -39,8 +39,8 @@ A collection of different knowledge/information I have gathered.
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* [Bibliography](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Latex/Single.md#Bibliography)<br>
      
 - <b> Miscellanous Documents </b><br>
- &nbsp; &nbsp; &nbsp; * [Virtual Host Configuration files](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/docs/VirtualHost.conf)
- &nbsp; &nbsp; &nbsp; * [Single Page Latex Document Structure](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/docs/SinglePageStructure.tex)
+ &nbsp; &nbsp; &nbsp; * [Virtual Host Configuration files](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/docs/VirtualHost.conf)<br>
+ &nbsp; &nbsp; &nbsp; * [Single Page Latex Document Structure](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/docs/SinglePageStructure.tex)<br>
 
 ## TODO
 ---
