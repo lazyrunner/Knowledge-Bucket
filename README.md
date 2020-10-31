@@ -51,3 +51,6 @@ A collection of different knowledge/information I have gathered.
 - [] Add Multi-doc Latex
 - [X] Add sample document showing the structure of Latex Single page document
 - [] Add Sampe Latex [multi doc]
+- [] How and why to set page counter 
+- [] using \autoref instead of \ref
+- [] use of \mathcal
