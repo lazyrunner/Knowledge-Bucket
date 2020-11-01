@@ -16,6 +16,9 @@
 % - misc
 @STRING{ac      = "{IEEE} Trans. Autom. Control" }
 
+% - Machine learning 
+@STRING{pami = "{IEEE} Trans. Pattern Anal. Mach. Intell., 2019"}
+
 % MAGAZINES
 @STRING{ram     = "{IEEE} Robot. Autom. Mag." }
 
@@ -27,9 +30,12 @@
 % - vision
 @STRING{cvpr    = "{IEEE} Conf. Comput. Vis. Pattern Recog. (CVPR)" }
 @STRING{eccv  = "European Conference on Computer Vision"}
+@STRING{bmvc = "British Mach. Vis. Conf. (BMVC)"}
 
 % - artificial intelligence
 @STRING{nips    = "Conf. Neural Inf. Process. Syst. (NIPS)" }
+@STRING{ijcnn = "Int. Joint Conf. Neural Netw. (IJCNN)"}
+@STRING{BMVC = "British Mach. Vis. Conf. (BMVC), 2017"}
 
 % - control
 @STRING{cdc     = "{IEEE} Conf. Decision Control (CDC)" }
@@ -43,6 +49,7 @@
 % PUBLISHERS
 @STRING{mit     = "The MIT Press, Cambridge, MA" }
 @STRING{arxiv   = "ar{X}iv e-prints" }
+@STRING{pp = "Plenum Press, New York"}
 
 % Bibtex 
 
@@ -131,4 +138,47 @@
   pages         = {349--364},
   doi           = {\protect{10.1007/978-3-319-46466-4_21}}
 }
+
+@InProceedings{Cook11ijcnn,
+  author        = {Matthew Cook and Luca Gugelmann and Florian Jug and Christoph
+                  Krautz and Angelika Steger},
+  title         = {Interacting maps for fast visual interpretation},
+  booktitle     = ijcnn,
+  year          = 2011,
+  pages         = {770--776},
+  doi           = {10.1109/IJCNN.2011.6033299}
+}
+
+@InProceedings{Kim14bmvc,
+  author        = {Hanme Kim and Ankur Handa and Ryad Benosman and Sio-Hoi Ieng
+                  and Andrew J. Davison},
+  title         = {Simultaneous Mosaicing and Tracking with an Event Camera},
+  booktitle     = bmvc,
+  year          = 2014,
+  doi           = {10.5244/C.28.26}
+}
+
+@Book{Rose73book,
+  author        = {Albert Rose},
+  title         = {Vision: {Human} and {Electronic}},
+  publisher     = pp,
+  year          = 1973
+}
+
+@Article{Rebecq19pami,
+  author        = {Henri Rebecq and Ren{\'{e}} Ranftl and Vladlen Koltun and
+                  Davide Scaramuzza},
+  title         = {High Speed and High Dynamic Range Video with an Event
+                  Camera},
+  journal       = pami,
+  year          = 2019,
+  doi           = {10.1109/TPAMI.2019.2963386}
+}
+
+@InProceedings{Mueggler17bmvc,
+  author        = {Elias Mueggler and Chiara Bartolozzi and Davide Scaramuzza},
+  title         = {Fast Event-based Corner Detection},
+  booktitle     = bmvc,
+  year          = 2017
+}     
   
