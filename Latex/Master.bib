@@ -15,6 +15,7 @@
 
 % - misc
 @STRING{ac      = "{IEEE} Trans. Autom. Control" }
+@STRING{tsp     = "{IEEE} Transactions on Signal Processing"}
 
 % - Machine learning 
 @STRING{pami = "{IEEE} Trans. Pattern Anal. Mach. Intell., 2019"}
@@ -31,6 +32,7 @@
 @STRING{cvpr    = "{IEEE} Conf. Comput. Vis. Pattern Recog. (CVPR)" }
 @STRING{eccv  = "European Conference on Computer Vision"}
 @STRING{bmvc = "British Mach. Vis. Conf. (BMVC)"}
+@STRING{iclr    = "Int. Conf. Learn. Representations ({ICLR})" }
 
 % - artificial intelligence
 @STRING{nips    = "Conf. Neural Inf. Process. Syst. (NIPS)" }
@@ -50,6 +52,8 @@
 @STRING{mit     = "The MIT Press, Cambridge, MA" }
 @STRING{arxiv   = "ar{X}iv e-prints" }
 @STRING{pp = "Plenum Press, New York"}
+@STRING{arxivpre = "arXiv preprint"}
+@STRING{sip = "Springer International Publishing"}
 
 % Bibtex 
 
@@ -180,5 +184,95 @@
   title         = {Fast Event-based Corner Detection},
   booktitle     = bmvc,
   year          = 2017
-}     
-  
+}  
+
+@ARTICLE{Aharon06tsp,
+  author={M. {Aharon} and M. {Elad} and A. {Bruckstein}},
+  journal= tsp, 
+  title={K-SVD: An algorithm for designing overcomplete dictionaries for sparse representation}, 
+  year={2006},
+  volume={54},
+  number={11},
+  pages={4311-4322},
+  doi={10.1109/TSP.2006.881199}
+} 
+
+@Inbook{Montavon19sip,
+author="Montavon, Gr{\'e}goire
+and Binder, Alexander
+and Lapuschkin, Sebastian
+and Samek, Wojciech
+and M{\"u}ller, Klaus-Robert",
+editor="Samek, Wojciech
+and Montavon, Gr{\'e}goire
+and Vedaldi, Andrea
+and Hansen, Lars Kai
+and M{\"u}ller, Klaus-Robert",
+title="Layer-Wise Relevance Propagation: An Overview",
+bookTitle="Explainable AI: Interpreting, Explaining and Visualizing Deep Learning",
+year="2019",
+publisher=sip,
+address="Cham",
+pages="193--209",
+isbn="978-3-030-28954-6",
+doi="10.1007/978-3-030-28954-6_10",
+url="https://doi.org/10.1007/978-3-030-28954-6_10"
+}
+
+@misc{fan20arxiv,
+      title={Robust Non-Linear Matrix Factorization for Dictionary Learning, Denoising, and Clustering}, 
+      author={Jicong Fan and Chengrun Yang and Madeleine Udell},
+      year={2020},
+      eprint={2005.01317},
+      archivePrefix=arxiv,
+      primaryClass={cs.LG}
+}
+
+@InProceedings{Zhang18cvpr,
+  author        = {Linguang Zhang and Szymon Rusinkiewicz},
+  title         = {Learning to Detect Features in Texture Images},
+  booktitle     = cvpr,
+  year          = 2018
+}
+
+@InProceedings{Zhang18cvprLPIPS,
+  author        = {Richard Zhang and Phillip Isola and Alexei A. Efros and Eli
+                  Shechtman and Oliver Wang},
+  title         = {The Unreasonable Effectiveness of Deep Features as a
+                  Perceptual Metric},
+  booktitle     = cvpr,
+  year          = 2018
+}
+
+
+@Article{Kingma15iclr,
+  author        = {Diederik P. Kingma and Jimmy L. Ba},
+  title         = {Adam: A Method for Stochastic Optimization},
+  journal       = iclr,
+  year          = 2015
+}
+
+@InProceedings{Agrawal05iccv,
+  author        = {Amit Agrawal and Rama Chellappa and Ramesh Raskar},
+  title         = {An algebraic approach to surface reconstruction from gradient
+                  fields},
+  booktitle     = iccv,
+  year          = 2005,
+  pages         = {174--181},
+  doi           = {10.1109/iccv.2005.31}
+}
+
+@InProceedings{Agrawal06eccv,
+author="Agrawal, Amit
+and Raskar, Ramesh
+and Chellappa, Rama",
+editor="Leonardis, Ale{\v{s}}
+and Bischof, Horst
+and Pinz, Axel",
+title="What Is the Range of Surface Reconstructions from a Gradient Field?",
+booktitle="Computer Vision -- ECCV 2006",
+year="2006",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="578--591"
+}
