@@ -6,7 +6,9 @@ A collection of different knowledge/information I have gathered.
 ---
 
 - <b> Linux </b><br>
-&nbsp; &nbsp; &nbsp; * [Web hosting in Linux server](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Linux/WebsiteHosting.md)
+&nbsp; &nbsp; &nbsp; * [Web hosting in Linux server](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Linux/WebsiteHosting.md)<br>
+&nbsp; &nbsp; &nbsp; * [Automating connecting to Remote Server](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Linux/ConnectingToSever.md)
+
 
 - <b> Windows</b><br>
  &nbsp; &nbsp; &nbsp; * [Windows frequent commands](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Windows/Commands.md)<br>
