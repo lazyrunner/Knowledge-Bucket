@@ -76,7 +76,7 @@ Two keys will be created [id] and [id].pub . <br>
 
 Move both of these keys to the <b>.ssh</b> folder.
 
-<b>Command to transfer the private key to the remote server<b>
+<b>Command to transfer the private key to the remote server</b>
   
 ```
 ssh-copy-id -i ~/.ssh/[id] [username]@[host]
