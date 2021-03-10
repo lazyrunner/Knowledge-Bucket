@@ -64,8 +64,108 @@ ssh [username]@[hostname/ip address]
 ```
 This will prompt for a password. Using this password we can log into it.</br>
 
-The next step is to use ssh key to remove the necessity to feed the password everytime. 
+The next step is to use ssh key to remove the necessity to feed the password everytime. For this we will generate the key, add it into the authorised key
+in the server.
+<br>
+<b>Command to create the authentication key</b></br>
 
+```
+ssh-keygen
+```
+Two keys will be created [id] and [id].pub . <br>
 
+Move both of these keys to the <b>.ssh</b> folder.
 
+<b>Command to transfer the private key to the remote server<b>
+  
+```
+ssh-copy-id -i ~/.ssh/[id] [username]@[host]
+```
+This command transfer the private key to the remote server and adds it into the authorised keys file. This is a configuration file that stores all ssh keys that can log into this server.
+
+Post this we can log into this server without password. 
+
+<b>Configuring this ssh login into key</b>
+
+So now when we want to log into the remote server we have to give [username]@[hostname] . We can convert it into a key so so that we can directly use it while sshing.
+
+To do this we need to create a config file inside .ssh folder of our client machine. The contents of this folder is given below
+
+```
+Host [key_name]
+    HostName [host ip or DNS server]
+    ForwardAgent yes
+    User [username]
+    IdentityFile ~/.ssh/[id]
+```
+The identityFile is just a added here but most probably won't be required. This key specifies a file from which the user’s DSA, ECDSA or DSA authentication identity is read. 
+
+Post this , a simple <b>ssh [key_name]</b> would be sufficient to log into the server. 
+
+## Automating this entire process
+
+We have now come to the last part of the document. The first two steps would be compiled together to make a single automated script. 
+
+<b>Shell script for automation</b>
+
+```
+#!/bin/sh
+
+echo "Starting vpn connection"
+openvpn2 --config ./Downloads/BCCN-sudeshna.ovpn --verb 6 --daemon
+ssh ritter_cluster
+```
+
+The first line is the shebang telling which shell or interpreter to use and to mark this script as an interpreter. 
+If not given, it will just use the default shell. 
+
+Once this is done we need to add a symbolic link to this script. Next we will discuss the symbolic link steps.
+
+<b> Make it executable </b>
+
+```
+chmod +x [filename]
+```
+
+### Steps to create symbolic link 
+
+<b>Find path of the shell script</b>
+
+```
+find . | egrep [filename]
+
+or
+
+pwd //inside the folder
+```
+<b>Get the folders in $PATH</b>
+
+```
+echo $PATH
+```
+This gives us the folders in which the terminal looks for executables. Plus when executing scripts in these folders we don't need to give full path. 
+
+<b>Command to create symlink </b>
+
+Symlink as the name suggests creates a symbolic link between the actual file and a key. We can circumvent this by putting the executable script in one of the $PATH folders and make it executable. 
+
+```
+ln -s [source file with path] [symbolic link]
+```
+
+<b>Command to check if symbolic link is created</b>
+
+The above command creates the symbolic link. To check if the link is created
+
+```
+ls -l symbolic link
+```
+
+This should give us a response :
+
+```
+lrwxrwxrwx 1 linuxize users  4 Nov  2 23:03  my_link.txt -> my_file.txt
+```
+
+<b>Trouble Shooting:</b> sometimes post creating the symmlink, the command is still not recognised. In this case one of the most common issues is the symlink connection is wrong. To solve that issue we first check the symlink path , incase there is an error we remove the symlink with ``rm``.
 
