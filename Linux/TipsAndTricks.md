@@ -15,3 +15,8 @@ This document captures all the tips , tricks and nit bits I learnt while working
 | Command | Explanation |
 | ------- | ----------- |
 |```man <commandName> ``` | ```man``` gives us the manual for the command we want to run in terminal |
+| ``` tar <options> <zipped_fileName> <destination_path> ``` | archive utility software |
+|``` ln <options> <sourcePath> <destinationPath>```| Creates a symbolic link. the destination path should be present in ```$PATH``` as it can be identified as executable only then. To remove just do ```rm <destinationPathWithFile>```|
+|``` wget DownloadableLink```| Non interactive network downloader|
+|``` ssh host ``` |secure shell login into remote server|
+
