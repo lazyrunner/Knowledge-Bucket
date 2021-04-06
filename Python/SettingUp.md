@@ -6,7 +6,7 @@ So, you have decided to work on python.
 In spite of on and off working on python , I hae never formalised the steps required to have a working environment ready quickly.
 This document is an attempt to do that.
 It is the first part that does the bare minimum of just installing python and adding it into $PATH.
-The second part will deal with [conda]() and creating virtual environment for each projects. 
+The second part will deal with [conda](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Python/NavigatingConda.md) and creating virtual environment for each projects. 
 
 ## Host system : Linux
 
