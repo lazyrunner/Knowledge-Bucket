@@ -19,6 +19,8 @@ pip install [options] <package_name>
 When we install a package , it is usually installed in the ```site-packages``` folder of the current python. 
 Putting it in the site-packages makes it easy to import the package by the ```import``` command.
 
+---
+
 ### What are distributions in python ? 
 
 A versioned archive file that contains Python packages, modules, and other resource files that are used to distribute a Release. 
@@ -26,13 +28,81 @@ The archive file is what an end-user will download from the internet and install
 
 <b>Distutils</b> tool is used to register the metadata of the created distribution to PyPI and upload the distributions.
 
+#### What is sdist ? 
+
+sDist is source distribution. The packages have the course code , any data file required and a ```setup.py``` file.
+A source distribution is packaged by : 
+
+```
+python setup.py sdist
+```
+When installing a package (uwsgi) having only source distribution by ```pip install```. 
+We see 
+
+```
+Collecting uwsgi==2.0.*
+  Downloading uwsgi-2.0.18.tar.gz (801 kB)
+     |████████████████████████████████| 801 kB 1.1 MB/s
+Building wheels for collected packages: uwsgi
+  Building wheel for uwsgi (setup.py) ... done
+  Created wheel for uwsgi ... uWSGI-2.0.18-cp38-cp38-macosx_10_15_x86_64.whl
+  Stored in directory: /private/var/folders/jc/8_hqsz0x1tdbp05 ...
+Successfully built uwsgi
+Installing collected packages: uwsgi
+Successfully installed uwsgi-2.0.18
+```
+the logs . 
+First the ```tar``` file is downloaded. 
+Then a wheel is packaged and labelled.
+Then it is installed from the wheel. 
+
+#### What is wheel ?
+
+Wheel is a built distribution. It is essentially a zip file.
+It means while installing a package wheel, it need not be built (like in sDist) and can be directly installed. 
+This makes it faster and smaller. It cuts off using ```setup.py``` file .
+
+We can create wheel by 
+
+```
+python setup.py bdist_wheel
+```
+
+While installing a package with a wheel available. 
+We see reduced steps 
+
+```
+Collecting chardet
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+     |████████████████████████████████| 133 kB 1.5 MB/s
+Installing collected packages: chardet
+Successfully installed chardet-3.0.4
+```
+
+There is a nomenclature to label wheels. It is <b>{dist}-{version}(-{build})?-{python}-{abi}-{platform}.whl</b>.
+
+If we unzip a wheel. 
+
+```
+Archive:  six-1.14.0-py2.py3-none-any.whl
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+    34074  01-15-2020 18:10   six.py
+     1066  01-15-2020 18:10   six-1.14.0.dist-info/LICENSE
+     1795  01-15-2020 18:10   six-1.14.0.dist-info/METADATA
+      110  01-15-2020 18:10   six-1.14.0.dist-info/WHEEL
+        4  01-15-2020 18:10   six-1.14.0.dist-info/top_level.txt
+      435  01-15-2020 18:10   six-1.14.0.dist-info/RECORD
+---------                     -------
+    37484                     6 files
+```
+
+---
+
 ### Where are these distributions stored ?
 
 These archived version are usually stored in <b>PyPI</b>. 
 It is usually stored as source distributions(<b>sdist</b>) or precompiled <b>wheels</b>.
-
-### What is wheel , egg and sdist ? 
-
 
 ---
 
