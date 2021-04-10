@@ -158,7 +158,7 @@ ln -s [source file with path] [symbolic link]
 The above command creates the symbolic link. To check if the link is created
 
 ```
-ls -l symbolic link
+ls -l [symbolic link]
 ```
 
 This should give us a response :
