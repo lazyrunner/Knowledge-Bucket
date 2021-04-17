@@ -10,8 +10,9 @@ This document captures all the tips , tricks and nit bits I learnt while working
 | ------------ | ------- | ------------ |
 | build-essential | ``` sudo get update && apt-get install build-essential ``` | Get all essential tools like gcc , g++ etc | 
 | default-jre |``` sudo apt install default-jre ``` | Install Java Runtime Environment |
+| gridengine-client| ``` sudo apt install gridengine-client ``` | Installs Distributed resource management |
 
-## Commands in Linux 
+## General Commands in Linux 
 | Command | Explanation |
 | ------- | ----------- |
 |```man <commandName> ``` | ```man``` gives us the manual for the command we want to run in terminal |
@@ -22,5 +23,15 @@ This document captures all the tips , tricks and nit bits I learnt while working
 |``` tree ``` | lists the directory structure |
 |``` ls -l``` | Detailed listing of contents of a directory |
 |``` ls -a ```| Lists all files |
+
+## DRM commands in linux
+
+| Command | Explanation |
+| ------- | ----------- |
+| ```qsub``` | Submits a batch job for execution in compute node.  |
+| ```qlogin``` |  Qlogin is similar to qsh in that it submits an interactive job to the queuing  system.  It does  not open an xterm(1) window on the X display, but uses the current terminal for user I/O. Example ```qlogin -l cuda=1 -binding linear:3```|
+| ```qstat``` | used to request the status of jobs, queues, or a batch  server. |
+| ```qdel``` |  A  batch  job  is  deleted by sending a request to the batch server that manages the batch job. |
+
 
 
