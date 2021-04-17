@@ -19,4 +19,8 @@ This document captures all the tips , tricks and nit bits I learnt while working
 |``` ln <options> <sourcePath> <destinationPath>```| Creates a symbolic link. the destination path should be present in ```$PATH``` as it can be identified as executable only then. To remove just do ```rm <destinationPathWithFile>```|
 |``` wget DownloadableLink```| Non interactive network downloader|
 |``` ssh host ``` |secure shell login into remote server|
+|``` tree ``` | lists the directory structure |
+|``` ls -l``` | Detailed listing of contents of a directory |
+|``` ls -a ```| Lists all files |
+
 
