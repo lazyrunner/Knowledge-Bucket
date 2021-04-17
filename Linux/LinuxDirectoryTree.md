@@ -42,6 +42,8 @@ lrwxrwxrwx   1 root root     7 Feb  2 22:13 bin -> usr/bin
 ```
 The ```bin``` folder is linked to the ```usr/bin```. 
 
+For binaries usable before the /usr partition is mounted.
+
 ### cdrom directory
 
 This is a legacy folder kept for mounting devices . 
@@ -122,6 +124,60 @@ We can use it to manage minotor brightness , mac address etc.
 
 Documentation [here](https://www.kernel.org/doc/Documentation/filesystems/sysfs.txt).
 
-### 
+### usr directory
 
+This is a misnomer. 
+It was used once ```/bin``` directory was full and does not pertain to ```user``` directory. 
 
+### boot directory
+
+The ```/boot/``` directory holds files used in booting the operating system. 
+
+Tutorial about the files inside [boot](https://www.linuxnix.com/linux-directory-structure-explained-boot-folder/).
+
+### dev directory
+
+All Linux device files are located in the ```/dev``` directory which is an integral part of the root ```(/)``` filesystem because these device files must be available to the operating system during the boot process.
+
+### home directory
+
+This directory has sub home directories for each user. The ```/home/<username>/``` is the homedirectory. 
+It can be changed using ```/etc/passwd```. 
+
+Each user has its own home directory. The home directory can be accessed by ```~```.
+
+### media directory 
+
+The /media directory contains subdirectories where removable media devices inserted into the computer are mounted.
+
+### opt directory
+
+This directory is for the installation of add-on application software packages.
+It is a directory for installing unbundled packages (i.e. packages not part of the Operating System distribution, but provided by an independent source), 
+each one in its own subdirectory.
+Alternatively, ```usr/local``` is a place to install files built by the administrator, typically by using the ```make``` command .
+
+### root directory
+
+It is the home directory of the root user. 
+To go inside this directory we have to used ```sudo su```. 
+
+### sbin directory
+
+For binaries usable before the ```/usr``` partition is mounted but for binaries with ```superuser (root)``` privileges required.
+
+### srv directory 
+
+The /srv/ directory contains site-specific data served by your system.
+This directory gives users the location of data files for a particular service, such as FTP, WWW, or CVS.
+Data that only pertains to a specific user should go in the /home/ directory.
+
+### tmp directory
+
+In Unix and Linux, the global temporary directories are /tmp and /var/tmp. Web browsers periodically write data to the tmp directory during page views and downloads. Typically, /var/tmp is for persistent files (as it may be preserved over reboots), and /tmp is for more temporary files.
+
+### var directory 
+
+It contains files to which the system writes data during the course of its operation.
+
+---
