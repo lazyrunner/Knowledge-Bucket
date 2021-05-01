@@ -2,7 +2,7 @@
 
 ## Author : Sudeshna Bora 
 
-### What is TMUX?
+## What is TMUX?
 
 It is a terminal multiplexer. 
 It allows us to leave terminal sessions and come back to them without interrupting the running process.
@@ -133,3 +133,89 @@ select-layout tiled \
 
 As you can notice , we cannot have any comments between ```tmux new-session``` and the remaining lines. 
 This is because all of these a single chained command. 
+
+---
+
+## Tmuxinator
+
+tmuxinator is a ruby gem that allows you to easily manage tmux sessions by using yaml files to describe the layout of a tmux session, 
+and open up that session with a single command.
+
+To install it
+
+```
+sudo apt-get install -y tmuxinator
+```
+Tmuxinator uses <b>yaml</b> file to read the configuration. 
+The manual for the same is [here](https://github.com/tmuxinator/tmuxinator).
+
+---
+
+The above workspace design can be emulated easily as follows:
+
+### Step 1 : Start a new project 
+
+```
+tmuxinator new [project_name]
+
+```
+When we run the above command , a new yaml file with default configurations are given.
+
+### Step 2 : Update the configuration file thus created.
+
+The updated configuration file for the above workspace (with a little change) is shown below :
+This gives us two ```windows```, the first ```window``` will have two panes , horizontally placed one above the other.
+This window will load ```jupyter notebook``` and ```spyder ide```. 
+
+
+The second window will have only a single ```pane``` which we will use as our terminal. 
+The reason we made this slight change is cause it is a bit unintuitive to scroll up and down in a pane which was an issue in the previous  layout.
+
+```
+
+# /home/subora/.config/tmuxinator/fundamentalAnalysis.yml
+
+name: fundamentalAnalysis
+root: ~/Documents/github_repository/FundamentalAnalysis/Codes/python/stockLib/stockLibraries
+
+startup_window : workspace
+
+windows:
+  - setup:
+      layout: main-horizontal
+      panes:
+        - spyder_setup:
+          - conda activate stockAnalysis
+          - spyder
+        - jupyter_setup:
+          - conda activate stockAnalysis
+          - jupyter notebook
+  - workspace:
+      layout: tiled
+      panes:
+        - conda activate stockAnalysis
+        
+```
+The first line gives us the path where the configuration is stored. In case, we want it in our project folder structures we can use
+```--local``` flag while creating a new project.
+
+The ```name``` field is the name of the project.
+
+The ```root``` is the root folder for all the windows and panes. In case we want a different root folder for a different window or pane, we can use 
+root under that tag.
+
+```startup_window``` gives us which window should be active when starting the session.
+
+```windows``` tag has two windows namely ```setup``` and ```workspace```. 
+The ```setup``` window has two panes namely ```spyder_setup``` and ```jupyter_setup```. 
+For both the panes, we run two commands which are placed under that tag. 
+
+The other window has only one pane where we just activate the environment.
+
+The updated configuration file can be found [here](https://github.com/SudeshnaBora/FundamentalAnalysis/blob/master/Codes/python/setup/fundamentalAnalysis.yml).
+
+
+
+
+
+
