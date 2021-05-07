@@ -23,6 +23,7 @@ This document captures all the tips , tricks and nit bits I learnt while working
 |``` tree ``` | lists the directory structure |
 |``` ls -l``` | Detailed listing of contents of a directory |
 |``` ls -a ```| Lists all files |
+|``` wc -l [filename]```| Number of lines in the file | 
 
 ## DRM commands in linux
 
