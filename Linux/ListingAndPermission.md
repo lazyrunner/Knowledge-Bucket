@@ -88,7 +88,9 @@ The command used to give permission is
 chmod options permissions directory/fileName
 ```
 
-The only option we need to concern with is `-R` which is recursive. 
+The only `option` we need to concern with is `-R` which is recursive and used to give permissions to all files under a directory or in a path. 
+
+`chmod` stands for `change mode`.
 
 In place of permissions we can also use `MODE`.
 
