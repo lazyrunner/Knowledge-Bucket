@@ -21,12 +21,13 @@ This document captures all the tips , tricks and nit bits I learnt while working
 |``` wget DownloadableLink```| Non interactive network downloader|
 |``` ssh host ``` |secure shell login into remote server|
 |``` tree ``` | lists the directory structure |
-|``` ls -l``` | Detailed listing of contents of a directory |
+|``` ls -l``` | Detailed listing of contents of a directory with permission|
 |``` ls -a ```| Lists all files |
 |``` wc -l [filename]```| Number of lines in the file | 
 |``` ps aux \| grep <whatever you want>```| Find the port id of running service|
 |```kill <pid>```| Kills the process with this pid|
 |```history``` or ```Ctrl r```| Get the history list of commands|
+|```chmod -R permissions directoryName```| Gives permissions to all file inside a directory. More [information](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Linux/ListingAndPermission.md#GivingPermission)|
 
 ## DRM commands in linux
 
