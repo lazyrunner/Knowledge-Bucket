@@ -24,6 +24,8 @@ This document captures all the tips , tricks and nit bits I learnt while working
 |``` ls -l``` | Detailed listing of contents of a directory |
 |``` ls -a ```| Lists all files |
 |``` wc -l [filename]```| Number of lines in the file | 
+|``` ps aux | grep <whatever you want>```| Find the port id of running service|
+|```kill <pid>```| Kills the process with this pid|
 
 ## DRM commands in linux
 
