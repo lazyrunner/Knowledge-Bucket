@@ -1,4 +1,4 @@
-# Tips and Tricks I learnt during competitive coding
+# Tips and Tricks 
 
 ### Author Sudeshna Bora
 
@@ -19,3 +19,24 @@ frequency = collections.Counter(a)
 ```
 
 ---
+
+## Find memory address 
+
+```
+id(variable_name)
+
+```
+
+---
+
+## Get size of a variable
+
+```
+import sys
+
+sys.getsizeof(variable_name)
+
+```
+
+---
+```
