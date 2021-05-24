@@ -24,7 +24,7 @@ This document captures all the tips , tricks and nit bits I learnt while working
 |``` ls -l``` | Detailed listing of contents of a directory with permission|
 |``` ls -a ```| Lists all files |
 |``` wc -l [filename]```| Number of lines in the file | 
-|``` find . -name "pattern*" -printf '.' | wc -m``` | Number of files in this folder matching a pattern |
+|``` find . -name "pattern*" -printf '.' \| wc -m``` | Number of files in this folder matching a pattern |
 |``` ps aux \| grep <whatever you want>```| Find the port id of running service|
 |```kill <pid>```| Kills the process with this pid|
 |```history``` or ```Ctrl r```| Get the history list of commands|
