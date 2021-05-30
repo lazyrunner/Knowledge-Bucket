@@ -33,7 +33,34 @@ Eg:
 conda create -n b2c python=2.7 anaconda
 ```
 
-The above command creates a virtual environment named "b2c" with python2.7 as the python interpreter version and installs anaconda into it. 
+The above command creates a virtual environment named "b2c" with python2.7 as the python interpreter version and installs anaconda into it.
+
+We can also create an environment using a ```environment.yml``` file. The skeleton of the file is as 
+
+```
+name: <environment name>
+channels: 
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - [library name]
+  - pip:
+    - [pip package]
+prefix : [path of the virtual environment]
+```
+The ```name``` gives the name of the virtual environment. The ```channels``` gives the channels to look for the packages. ```dependencies``` give us the 
+packages required. In case the package is available only in pip , we install it as a pip subprocess. 
+Finally, ```prefix``` gives us the path of the virtual environment. However, this field is not used while creating an environment.
+
+The command to create a virtual environment using yaml file is a bit different
+
+```
+conda env create --file environment.yml
+```
+A point to be noted is, all dependencies (not pip packages) are installed as executable in ```bin``` of the virtual environment and can be found using 
+```which package```, whereas all pip packages installed by pip sub package are installed and found in ```site-package``` inside the python folder of the 
+virtual environment. This can be found using ```pip show```.
 
 There are other options which can be found by 
 
@@ -75,9 +102,10 @@ Once it is activated , the terminal command prompt will have the name of the env
 To delete a virtual environment 
 
 ```
-conda env remove --name <env_name>
+conda env remove --name <env_name> [--all]
 
 ```
+The ```--all``` is used to delete all packages inside that environment.
 
 ---
 
