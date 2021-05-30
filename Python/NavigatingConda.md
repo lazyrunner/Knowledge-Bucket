@@ -97,6 +97,8 @@ conda deactivate <env_name>
 
 Once it is activated , the terminal command prompt will have the name of the environment.
 
+---
+
 #### Removing a virtual environment
 
 To delete a virtual environment 
@@ -107,6 +109,13 @@ conda env remove --name <env_name> [--all]
 ```
 The ```--all``` is used to delete all packages inside that environment.
 
+---
+
+#### Exporting the virtual environment 
+
+```
+conda env export -f environment.yml
+```
 ---
 
 #### Listing packages in a virtual environment
