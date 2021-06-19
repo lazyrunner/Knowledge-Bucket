@@ -55,6 +55,7 @@ For this we will follow the following steps.
 
 ##### Step 1 : Install the package from the cloned folder in development mode
 
+A important point (albeit intuitive) is that to do pip install in development mode , please be inside that github project. 
 ```
 pip install -e brian2
 ```
