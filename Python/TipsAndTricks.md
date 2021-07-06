@@ -39,4 +39,14 @@ sys.getsizeof(variable_name)
 ```
 
 ---
+
+## Render markdown file as html 
+
+<b>Package: </b> grip
+
 ```
+grip [-b] [port#] fileName.md
+```
+Here , ```-b``` means ```in browser```. 
+
+---
