@@ -29,6 +29,7 @@ This document captures all the tips , tricks and nit bits I learnt while working
 |```kill <pid>```| Kills the process with this pid|
 |```history``` or ```Ctrl r```| Get the history list of commands|
 |```chmod -R permissions directoryName```| Gives permissions to all file inside a directory. More [information](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Linux/ListingAndPermission.md#GivingPermission)|
+|```ssh -L local port:server port remote_server_details``` | Forwards local port to remote port (-L is local, -R is remote). Eg : ```ssh -o ServerAliveInterval=60 -NfL localhost:8889:localhost:8889 sprekeler_cluster```| 
 
 ## DRM commands in linux
 
