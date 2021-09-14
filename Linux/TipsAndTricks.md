@@ -30,6 +30,11 @@ This document captures all the tips , tricks and nit bits I learnt while working
 |```history``` or ```Ctrl r```| Get the history list of commands|
 |```chmod -R permissions directoryName```| Gives permissions to all file inside a directory. More [information](https://github.com/SudeshnaBora/Knowledge-Bucket/blob/main/Linux/ListingAndPermission.md#GivingPermission)|
 |```ssh -L local port:server port remote_server_details``` | Forwards local port to remote port (-L is local, -R is remote). Eg : ```ssh -o ServerAliveInterval=60 -NfL localhost:8889:localhost:8889 sprekeler_cluster```| 
+|```sshfs <username>@<host_name>:<path> <local directory path>``` | Mounts remote folder to local folder |
+|```nohup <command> &> <logfile_name> &```| Run a program in background and log output in a logfile . ```nohup``` means ```no hang up```, it prevents the process from receiving the   ```SIGNAL HANGUP``` signal , which terminates the process, and continues running the program even after the shell terminates. ```&>``` logs the output in the given output file.  ```&``` means to run the process asynchronously |
+|```dpkg --print-architecture```| Prints the architecture of the os. ```dpkg``` is debian package manager, that handles ```.deb``` file. |
+|```xrandr```| Gives us information about the various screens/port available in our os. This is used to to set the size, orientation and/or reflection of the outputs for a screen. |
+|```command 1> <file_name> 2>&1```| Redirects standard output (file descriptor #1) and standard error (file descriptor #2) to <file_name>. ```&1``` references |
 
 ## DRM commands in linux
 
