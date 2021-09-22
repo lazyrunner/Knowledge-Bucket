@@ -28,13 +28,13 @@ Install and initialise npm
 
 #### Step 2:
 
-1. Install nodejs
+1. Install nodejs.
 
 ```
 npm i -S nodejs
 ```
 
-2. Install and setup [postgresql](../Postgresql/introduction.md)
+2. Install and setup [postgresql](../Postgresql/introduction.md).
 
 
 ---
