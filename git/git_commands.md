@@ -45,7 +45,14 @@ changes so that it is not lost with the updation. ```git stash``` is used for sh
 ```
 git stash
 ```
-This stashes the current state of the branch with an index. The index can be seen by :
+This stashes the current state of the branch with an index. 
+In case we want to name our comment our stash, we can use:
+  
+```
+git stash push -m "<stash_name>"
+```
+  
+The list of stashes can be seen by :
   
 ```
 git stash list
@@ -54,12 +61,34 @@ Response:
   
 stash@{0}: WIP on consistency_test: c88f335 randomization check for few algorithms
 ```
-In case we want to <b>name our stash</b> , we use the command : 
+
+There are two ways to apply the git stash into the current directory. 
   
 ```
-git stash push -m "<stash_name>"
+git stash apply
 ```
-Doing ```git stash list``` post that will give us a similar list as above but our message 
+  
+```
+git stash pop
+```
+The difference between the first and the second command is that with ```apply```, the entry into the stash is not deleted whereas for ```pop``` 
+we delete the entry from the stash. 
+  
+We also know , the stash entries are indexed and we can also give our custom identifier. 
+So, we can use these indices or custom identifiers to get a particular stash.
+  
+```
+git stash pop stash@{n}
+
+git stash apply stash@{n}
+  
+Here, n is the index number
+
+git stash apply stash^{/message}
+```
+  
+---
+
   
 
   
