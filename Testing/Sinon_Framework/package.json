@@ -1,0 +1,25 @@
+{
+  "name": "sinon_framework",
+  "version": "1.0.0",
+  "description": "Use Sinon framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sinon",
+    "node",
+    "http"
+  ],
+  "author": "sudeshna bora",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mocha": "^9.1.2",
+    "pg": "^8.7.1",
+    "sinon": "^11.1.2"
+  }
+}
