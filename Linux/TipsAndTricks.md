@@ -11,6 +11,8 @@ This document captures all the tips , tricks and nit bits I learnt while working
 | build-essential | ``` sudo get update && apt-get install build-essential ``` | Get all essential tools like gcc , g++ etc | 
 | default-jre |``` sudo apt install default-jre ``` | Install Java Runtime Environment |
 | gridengine-client| ``` sudo apt install gridengine-client ``` | Installs Distributed resource management |
+| playonlinux | ```sudo apt install playonlinux``` | PlayOnLinux is a graphical frontend for the Wine software compatibility layer which allows Linux users to install Windows-based video games, Microsoft Office, Microsoft Internet Explorer, as well as many other applications such as Apple iTunes and Safari. |
+| wine | ```sudo apt install wine64 ``` | Wine is a free and open-source compatibility layer that aims to allow application software and computer games developed for Microsoft Windows to run on Unix-like operating systems. |
 
 ## General Commands in Linux 
 | Command | Explanation |
