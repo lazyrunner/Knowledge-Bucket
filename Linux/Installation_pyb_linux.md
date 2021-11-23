@@ -2,6 +2,8 @@
 
 #### OS version : ubuntu 20.04
 
+#### Author : Sudeshna Bora / Print your brain team  
+
 The softwares required and their installation process is mentioned below:
 
 
