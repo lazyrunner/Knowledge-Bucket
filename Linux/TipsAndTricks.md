@@ -37,7 +37,7 @@ This document captures all the tips , tricks and nit bits I learnt while working
 |```dpkg --print-architecture```| Prints the architecture of the os. ```dpkg``` is debian package manager, that handles ```.deb``` file. |
 |```xrandr```| Gives us information about the various screens/port available in our os. This is used to to set the size, orientation and/or reflection of the outputs for a screen. |
 |```command 1> <file_name> 2>&1```| Redirects standard output (file descriptor #1) and standard error (file descriptor #2) to <file_name>. ```&1``` references |
-|```find . -type d | grep DIRNAME```| Finds a directory (if present) |
+|```find . -type d \| grep DIRNAME```| Finds a directory (if present) |
 
 ## DRM commands in linux
 
