@@ -10,9 +10,9 @@
 
    Source : [neetcode](https://neetcode.io/practice)
    
-   - [ ] Easy  <br>
-   - [ ] Medium <br>
-   - [ ] Hard <br>
+   - [ ] Easy [1/29] <br>
+   - [ ] Medium [3/99] <br>
+   - [ ] Hard [0/22] <br>
  
  2. FAANG List:
 
